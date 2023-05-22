@@ -5,17 +5,35 @@
     <style>
         table {
             border-collapse: collapse;
+            margin: 0px auto;
         }
         th, td {
             border: 1px solid black;
             padding: 6px;
             text-align: center;
+            vertical-align: middle;
         }
+         input[type="number"] {
+             text-align: center;
+             width: 60px;
+         }
         #total-non_symptoms {
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100%;
+        }
+        #contingency-table,
+        #probabilities-table,
+        #conditional-probabilities-table {
+            margin-top: 10px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 0 auto;
         }
     </style>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
