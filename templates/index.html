@@ -3,37 +3,72 @@
 <head>
     <title>Marginal, Joint and Conditional probabilities</title>
     <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
         table {
             border-collapse: collapse;
-            margin: 0px auto;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         th, td {
             border: 1px solid black;
             padding: 6px;
             text-align: center;
             vertical-align: middle;
         }
-         input[type="number"] {
-             text-align: center;
-             width: 60px;
-         }
+
+        input[type="number"] {
+            text-align: center;
+            width: 60px;
+        }
+
         #total-non_symptoms {
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100%;
         }
+
         #contingency-table,
         #probabilities-table,
         #conditional-probabilities-table {
             margin-top: 10px;
         }
+
         h1, h2 {
             text-align: center;
         }
+
         input[type="submit"] {
             display: block;
             margin: 0 auto;
+        }
+
+        .probabilities-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .probabilities-container table {
+            margin: 0 10px;
+            width: 48%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     </style>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -157,6 +192,8 @@
     </form>
     <br>
     <br>
+    <div id="probabilities-wrapper">
+        <div>
     <h2>Joint and Marginal Probabilities</h2>
     <table>
         <tr>
